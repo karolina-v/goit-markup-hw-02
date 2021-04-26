@@ -1,0 +1,96 @@
+:root {
+  --primery-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+  --logo-text-color: #2196f3;
+  --banner-color: #ffffff;
+  --address-color: rgba(255, 255, 255, 0.6);
+  --accent-bg-color: #2196f3;
+  --banner-bg-color: #2f303a;
+}
+
+/* страница */
+.page {
+  background-color: #ffffff;
+  color: var(--primery-text-color);
+}
+
+/* логотип оформить спан!!! */
+.logo {
+  color: var(--logo-text-color);
+}
+
+.logo .part {
+  color: #000000;
+}
+
+.logo .second-part {
+  color: #ffffff;
+}
+
+.list {
+  list-style: none;
+}
+
+/* навигация сайта */
+.site-nav .link {
+  color: var(--primery-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* контакты */
+.contacts .link {
+  color: var(--title-text-color);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* баннер */
+.banner {
+  background-color: var(--banner-bg-color);
+}
+
+.banner-title {
+  color: var(--banner-color);
+}
+
+/* кнопка */
+.button {
+  color: var(--banner-color);
+  background-color: var(--accent-bg-color);
+}
+
+/* секции */
+.section-title {
+  color: var(--primery-text-color);
+}
+
+/* особенности */
+.features-title {
+  color: var(--primery-text-color);
+}
+
+.features-text {
+  color: var(--title-text-color);
+}
+
+/* наша команда */
+.team-member {
+  color: var(--primery-text-color);
+}
+
+.team-position {
+  color: var(--title-text-color);
+}
+
+/* подвал */
+.footer {
+  background-color: var(--banner-bg-color);
+}
