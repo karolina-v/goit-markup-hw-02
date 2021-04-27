@@ -3,10 +3,12 @@
   --title-text-color: #757575;
   --accent-color: #2196f3;
   --logo-text-color: #2196f3;
-  --banner-color: #ffffff;
-  --address-color: rgba(255, 255, 255, 0.6);
-  --accent-bg-color: #2196f3;
-  --banner-bg-color: #2f303a;
+  --banner-text-color: #ffffff;
+  --contacts-header-color: #757575;
+  --contacts-footer-color: rgba(255, 255, 255, 0.6);
+  --primery-bg-color: #ffffff;
+  --second-bg-color: #2f303a;
+  --team-bg-color: #f5f4fa;
 }
 
 /* страница */
@@ -15,19 +17,16 @@
   color: var(--primery-text-color);
 }
 
-/* логотип оформить спан!!! */
+/* логотип в шапке */
 .logo {
   color: var(--logo-text-color);
 }
 
-.logo .part {
+.page-header .part {
   color: #000000;
 }
 
-.logo .second-part {
-  color: #ffffff;
-}
-
+/* маркеры в списках */
 .list {
   list-style: none;
 }
@@ -38,36 +37,38 @@
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus,
+.site-nav .link:active {
   color: var(--accent-color);
 }
 
-/* контакты */
+/* контакты в шапке */
 .contacts .link {
   color: var(--title-text-color);
 }
 
 .contacts .link:hover,
-.contacts .link:focus {
+.contacts .link:focus,
+.contacts .link:active {
   color: var(--accent-color);
 }
 
 /* баннер */
 .banner {
-  background-color: var(--banner-bg-color);
+  background-color: var(--second-bg-color);
 }
 
 .banner-title {
-  color: var(--banner-color);
+  color: var(--banner-text-color);
 }
 
-/* кнопка */
-.button {
-  color: var(--banner-color);
-  background-color: var(--accent-bg-color);
+/* кнопка в баннере */
+.banner-button {
+  background-color: var(--accent-color);
+  color: var(--banner-text-color);
 }
 
-/* секции */
+/* названия всех секций, кроме баннера */
 .section-title {
   color: var(--primery-text-color);
 }
@@ -82,15 +83,43 @@
 }
 
 /* наша команда */
+.section-team {
+  background-color: var(--team-bg-color);
+}
+
 .team-member {
+  background-color: var(--primery-bg-color);
+}
+
+.member-name {
   color: var(--primery-text-color);
 }
 
-.team-position {
+.member-position {
   color: var(--title-text-color);
 }
 
 /* подвал */
 .footer {
-  background-color: var(--banner-bg-color);
+  background-color: var(--second-bg-color);
+}
+
+.footer .part {
+  color: #ffffff;
+}
+
+/* address */
+.address {
+  color: #ffffff;
+}
+
+/* контакты в подвале */
+.footer .link {
+  color: var(--contacts-footer-color);
+}
+
+.footer .link:hover,
+.footer .link:focus,
+.footer .link:active {
+  color: var(--accent-color);
 }
