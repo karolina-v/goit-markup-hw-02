@@ -9,20 +9,30 @@
   --primery-bg-color: #ffffff;
   --second-bg-color: #2f303a;
   --team-bg-color: #f5f4fa;
+  --buttons-bg-color: #f5f4fa;
 }
 
 /* страница */
 .page {
-  background-color: #ffffff;
+  background-color: var(--primery-bg-color);
   color: var(--primery-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 /* логотип в шапке */
 .logo {
   color: var(--logo-text-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
 }
 
-.page-header .part {
+.page-header .logo-part {
   color: #000000;
 }
 
@@ -34,6 +44,12 @@
 /* навигация сайта */
 .site-nav .link {
   color: var(--primery-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -42,9 +58,19 @@
   color: var(--accent-color);
 }
 
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
 /* контакты в шапке */
 .contacts .link {
   color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .contacts .link:hover,
@@ -60,26 +86,46 @@
 
 .banner-title {
   color: var(--banner-text-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 /* кнопка в баннере */
 .banner-button {
-  background-color: var(--accent-color);
   color: var(--banner-text-color);
+  background-color: var(--accent-color);
+
+  font-family: inherit;
 }
 
 /* названия всех секций, кроме баннера */
 .section-title {
   color: var(--primery-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 /* особенности */
 .features-title {
   color: var(--primery-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
 }
 
 .features-text {
   color: var(--title-text-color);
+
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 /* наша команда */
@@ -93,10 +139,19 @@
 
 .member-name {
   color: var(--primery-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
 
 .member-position {
   color: var(--title-text-color);
+
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
 
 /* подвал */
@@ -104,22 +159,76 @@
   background-color: var(--second-bg-color);
 }
 
-.footer .part {
+.footer .logo-part {
   color: #ffffff;
 }
 
 /* address */
-.address {
+.footer .address {
   color: #ffffff;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 /* контакты в подвале */
 .footer .link {
   color: var(--contacts-footer-color);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
 }
 
 .footer .link:hover,
 .footer .link:focus,
 .footer .link:active {
   color: var(--accent-color);
+}
+
+/* стили для страницы Портфолио */
+.buttons .filter {
+  color: var(--primery-text-color);
+  background-color: var(--buttons-bg-color);
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.buttons .filter:hover,
+.buttons .filter:focus,
+.buttons .filter:active {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.project {
+  background-color: var(--primery-bg-color);
+}
+
+.project-name {
+  color: var(--primery-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-type {
+  color: var(--title-text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
 }
