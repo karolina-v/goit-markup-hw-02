@@ -95,11 +95,24 @@
 }
 
 /* кнопка в баннере */
-.banner-button {
+.buttons {
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.buttons.banner-button {
   color: var(--banner-text-color);
   background-color: var(--accent-color);
 
-  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
 }
 
 /* названия всех секций, кроме баннера */
@@ -147,6 +160,7 @@
 .member-position {
   color: var(--title-text-color);
 
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -187,23 +201,18 @@
 }
 
 /* стили для страницы Портфолио */
-.buttons .filter {
+.buttons.filter {
   color: var(--primery-text-color);
   background-color: var(--buttons-bg-color);
-  border-radius: 4px;
 
-  font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.6;
-  text-align: center;
-
-  cursor: pointer;
+  letter-spacing: 0.03em;
 }
 
-.buttons .filter:hover,
-.buttons .filter:focus,
-.buttons .filter:active {
+.buttons.filter:hover,
+.buttons.filter:focus,
+.buttons.filter:active {
   color: var(--portfolio-buttons-active-color);
   background-color: var(--accent-color);
 }
