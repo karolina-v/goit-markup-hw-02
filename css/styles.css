@@ -17,7 +17,7 @@
 }
 
 /* страница */
-.page {
+body {
   background-color: var(--primery-bg-color);
   color: var(--primery-text-color);
 
@@ -128,9 +128,8 @@
 .features-title {
   color: var(--primery-text-color);
 
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  font-weight: 400;
+  line-height: 1.7;
 }
 
 .features-text {
